@@ -17,7 +17,7 @@ function App() {
 
 
   function check(){
-    var logindetails=axios.post("http://localhost:3000/login",{"username":user,"password":pass})
+    var logindetails=axios.post("https://login-react-backend-production.up.railway.app/",{"username":user,"password":pass})
     logindetails.then(function(data){
      if(data.data==true){
        navigate('/success')
